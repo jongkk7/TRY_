@@ -45,6 +45,9 @@ dependencies {
 
     implementation project(':common')
 
+    // User Modules
+    implementation project(':YJK')
+
 }
 
 
