@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+apply from: '../version.gradle'
+
+android {
+    compileSdkVersion deps.versions.compileSdkVersion
+    buildToolsVersion deps.versions.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion deps.versions.compileSdkVersion
+        targetSdkVersion deps.versions.compileSdkVersion
+        versionCode deps.versions.versionCode
+        versionName deps.versions.versionName
+
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // implementation deps.kotlin.stdlib // todo 사용 여부 확인
+    api deps.appcompat
+    api deps.material
+    api deps.constraintlayout
+    implementation deps.viewpager2
+
+    implementation deps.retrofit.runtime
+    implementation deps.retrofit.gson_converter
+
+
+}
