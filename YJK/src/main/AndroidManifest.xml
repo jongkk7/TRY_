@@ -2,8 +2,7 @@
     package="com.yjk.yjk" >
 
 
-    <application
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+    <application>
 
         <activity android:name=".view.ActivityIntro"
             android:screenOrientation="portrait"/>
