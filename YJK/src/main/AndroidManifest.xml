@@ -5,7 +5,7 @@
     <application
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
-        <activity android:name=".ActivityIntro"
+        <activity android:name=".view.ActivityIntro"
             android:screenOrientation="portrait"/>
 
     </application>

@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.yjk.common.HashKeyUtil;
-import com.yjk.yjk.ActivityIntro;
+import com.yjk.yjk.view.ActivityIntro;
 
 
 public class ActivityStart extends AppCompatActivity {
