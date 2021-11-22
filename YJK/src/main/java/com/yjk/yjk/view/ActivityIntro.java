@@ -17,7 +17,7 @@ public class ActivityIntro extends AppCompatActivity {
         initView();
         setEvent();
 
-        // 개별 모듈작업 푸시 테스트 2
+        // 새로운 사용자 브랜치 테스트
     }
 
     private void initView(){
