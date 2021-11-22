@@ -1,12 +1,10 @@
 package com.yjk.yjk.view;
 
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.yjk.yjk.R;
-import com.yjk.yjk.callback.SingleClickListener;
 
 
 public class ActivityIntro extends AppCompatActivity {
@@ -19,7 +17,7 @@ public class ActivityIntro extends AppCompatActivity {
         initView();
         setEvent();
 
-        // git push test
+        // 개별 모듈작업 푸시 테스트
     }
 
     private void initView(){
@@ -27,7 +25,6 @@ public class ActivityIntro extends AppCompatActivity {
     }
 
     private void setEvent(){
-
 
     }
 }
