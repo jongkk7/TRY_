@@ -1,8 +1,12 @@
-package com.yjk.yjk;
+package com.yjk.yjk.view;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.yjk.yjk.R;
+import com.yjk.yjk.callback.SingleClickListener;
 
 
 public class ActivityIntro extends AppCompatActivity {
@@ -23,6 +27,7 @@ public class ActivityIntro extends AppCompatActivity {
     }
 
     private void setEvent(){
+
 
     }
 }
