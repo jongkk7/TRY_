@@ -21,6 +21,8 @@ public class ActivityIntro extends AppCompatActivity {
 
         // merge test
         // master 푸시 되나?
+        // master 푸시 요청!!!
+        
     }
 
     private void initView(){
