@@ -18,6 +18,8 @@ public class ActivityIntro extends AppCompatActivity {
 
         initView();
         setEvent();
+
+        // git push test
     }
 
     private void initView(){
