@@ -20,6 +20,7 @@ public class ActivityIntro extends AppCompatActivity {
         setEvent();
 
         // merge test
+        // master 푸시 되나?
     }
 
     private void initView(){
