@@ -1,12 +1,10 @@
 package com.yjk.yjk.view;
 
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.yjk.yjk.R;
-import com.yjk.yjk.callback.SingleClickListener;
 
 
 public class ActivityIntro extends AppCompatActivity {
@@ -19,10 +17,9 @@ public class ActivityIntro extends AppCompatActivity {
         initView();
         setEvent();
 
-        // merge test
-        // master 푸시 되나?
-        // master 푸시 요청!!!
-        
+
+        // 새로운 사용자 브랜치 테스트 22
+
     }
 
     private void initView(){
@@ -30,7 +27,6 @@ public class ActivityIntro extends AppCompatActivity {
     }
 
     private void setEvent(){
-
 
     }
 }
