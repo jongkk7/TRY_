@@ -14,6 +14,8 @@ public class ActivityIntro extends AppCompatActivity {
 
         initView();
         setEvent();
+
+        // merge test
     }
 
     private void initView(){
