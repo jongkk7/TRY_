@@ -17,7 +17,9 @@ public class ActivityIntro extends AppCompatActivity {
         initView();
         setEvent();
 
+
         // 새로운 사용자 브랜치 테스트 22
+
     }
 
     private void initView(){
