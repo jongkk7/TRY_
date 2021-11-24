@@ -9,7 +9,7 @@ import android.os.Bundle;
 import com.yjk.common.HashKeyUtil;
 import com.yjk.yjk.view.ActivityIntro;
 
-// test
+// test21
 public class ActivityStart extends AppCompatActivity {
 
     /**
