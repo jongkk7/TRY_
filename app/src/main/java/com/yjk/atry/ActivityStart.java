@@ -1,45 +1,62 @@
 package com.yjk.atry;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
-import com.yjk.common.HashKeyUtil;
-import com.yjk.yjk.view.ActivityIntro;
+import androidx.appcompat.app.AppCompatActivity;
+
+import dalvik.system.InMemoryDexClassLoader;
 
 // test
 public class ActivityStart extends AppCompatActivity {
+    public static final String KEY_NICKNAME = "nickname";
 
-    /**
-     * FIXME !!
-     * start activity
-     */
-    private Class activityClass = ActivityIntro.class;
-    private Context context;
+    private Context mContext;
+
+    private EditText editTextNickname;
+    private TextView textViewNext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-        init();
-        start();
+        initView();
+        setEvent();
     }
 
-    private void start(){
-        startActivity(new Intent(this, activityClass));
+
+    private void initView() {
+
+        mContext = this;
+
+        editTextNickname = (EditText) findViewById(R.id.editTextNickname);
+        textViewNext = (TextView) findViewById(R.id.textViewNext);
     }
 
-    private void init(){
+    private void setEvent(){
 
-        context = this;
+        textViewNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        if(BuildConfig.DEBUG){
+                String nickname = editTextNickname.getText().toString();
+                if(nickname.isEmpty()){
+                    Toast.makeText(mContext, "닉네임을 입력해주세요.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
 
-            HashKeyUtil.getHashKey(context);
+                // 다음화면
+                Intent i = new Intent(mContext, ActivityMain.class);
+                i.putExtra(KEY_NICKNAME, nickname);
+                startActivity(i);
 
-        }
+            }
+        });
     }
 }
