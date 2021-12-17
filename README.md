@@ -7,13 +7,13 @@ Android Study 개발자를 위한 도전과제 프로젝트입니다. <BR>
 
 ### 패키지구조
 ㄴ app - 앱 개발모듈<BR>
-  [tab][space]ㄴ _0_root : 앱 첫화면, 도전과제 리스트
-  [tab][space]ㄴ _1_android_base : 기본편 도전과제
-  <t>ㄴ _2_camera_gallery : 카메라 & 앨범 기능 도전과제
+  &nbspㄴ _0_root : 앱 첫화면, 도전과제 리스트<BR>
+  &nbspㄴ _1_android_base : 기본편 도전과제<BR>
+  &nbspㄴ _2_camera_gallery : 카메라 & 앨범 기능 도전과제<BR><BR>
   
 ㄴ common - 공통 모듈<BR>
-  <t>ㄴ callback : 콜백
-  <t>ㄴ database : 내부 디비 ( sharedPreferences, room )
-  <t>ㄴ http : 통신 모듈 ( retrofit )
-  <t>ㄴ util : 유틸리티
-  <t>ㄴ view : 뷰 관련 유틸
+  &nbspㄴ callback : 콜백<BR>
+  &nbspㄴ database : 내부 디비 ( sharedPreferences, room )<BR>
+  &nbspㄴ http : 통신 모듈 ( retrofit )<BR>
+  &nbspㄴ util : 유틸리티<BR>
+  &nbspㄴ view : 뷰 관련 유틸<BR>
