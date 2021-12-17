@@ -1,10 +1,18 @@
 package com.yjk.common.view;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowInsets;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.WindowInsetsControllerCompat;
+
+import com.yjk.common.util.TLog;
 
 public abstract class BaseActivity  extends AppCompatActivity {
     protected final String TAG = "###" + getClass().getSimpleName();
@@ -22,7 +30,21 @@ public abstract class BaseActivity  extends AppCompatActivity {
     protected abstract void setEvent();
 
     // TODO : status bar 색상 변경
+    protected void setStatusBarColor(boolean isWhiteIcon, int color) {
+        try {
+            Window window = getWindow();
+            View view = window.getDecorView();
 
-    // TODO : 기본 팝업
+            if (isWhiteIcon) {
+                new WindowInsetsControllerCompat(window, view).setAppearanceLightStatusBars(false);
+            } else {
+                new WindowInsetsControllerCompat(window, view).setAppearanceLightStatusBars(true);
+            }
 
+            window.setStatusBarColor(color);
+
+        } catch (Exception e) {
+            TLog.e("Exception -> " + e);
+        }
+    }
 }

@@ -11,11 +11,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
+//import androidx.appcompat.app.AppCompatActivity;
 
 import com.yjk.atry.R;
 import com.yjk.common.util.TTextUtil;
 import com.yjk.common.view.BaseActivity;
+
+//import okhttp3.internal.Util;
 
 public class ActivityBaseMain extends BaseActivity {
 
@@ -31,13 +33,13 @@ public class ActivityBaseMain extends BaseActivity {
     private EditText editTextNickname;
     private TextView textViewOk;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base_main);
 
         getData();
-
         initView();
         setEvent();
     }
@@ -49,8 +51,7 @@ public class ActivityBaseMain extends BaseActivity {
 
     }
 
-
-    @Override
+    @Deprecated
     protected void initView() {
 
         mContext = this;
@@ -104,6 +105,7 @@ public class ActivityBaseMain extends BaseActivity {
             }
         });
     }
+
 
     private void setNicknameText(){
         textViewWelcome.setText(nickname + "님,\n" + "반갑습니다.");
