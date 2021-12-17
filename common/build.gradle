@@ -15,12 +15,28 @@ android {
     }
 
     buildTypes {
+        debug {
+            ext.enableCrashlytics = false // 디버그일 경우 충돌보고서 사용 x
+            ext.alwaysUpdateBuildId = false // 빌드 시 고유 빌드 ID 업데이트 방지
+            crunchPngs false // 이미지 자동압축 사용 중지
+            aaptOptions.cruncherEnabled = false
+            splits.abi.enable = false // 화면 밀도에 따라 여러개의 APK파일을 빌드하는 작업 x
+            splits.density.enable = false
+//            resValue "string", "app_build_date",  getTestDate()
+            resValue "string", "kakao_app_key", "{APP_KEY}"
+            resValue "string", "kakao_scheme", "kakao{APP_KEY}"
+            minifyEnabled false
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {

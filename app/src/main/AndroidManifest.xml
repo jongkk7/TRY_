@@ -9,13 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".ActivityStart">
+
+
+        <activity android:name="._0_root.ActivityIntro"
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 기초편 -->
+        <activity android:name="._1_android_base.ActivityBaseStart"
+            android:screenOrientation="portrait"/>
+        <activity android:name="._1_android_base.ActivityBaseMain"
+            android:screenOrientation="portrait"/>
+
+        <!-- 카메라 & 앨범 -->
+        <activity android:name="._2_camera_gallery.ActivityCameraMain"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>
