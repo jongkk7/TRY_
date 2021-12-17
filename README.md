@@ -7,8 +7,8 @@ Android Study 개발자를 위한 도전과제 프로젝트입니다. <BR>
 
 ### 패키지구조
 ㄴ app - 앱 개발모듈<BR>
-  <t>ㄴ _0_root : 앱 첫화면, 도전과제 리스트
-  <t>ㄴ _1_android_base : 기본편 도전과제
+  <space>ㄴ _0_root : 앱 첫화면, 도전과제 리스트
+  >ㄴ _1_android_base : 기본편 도전과제
   <t>ㄴ _2_camera_gallery : 카메라 & 앨범 기능 도전과제
   
 ㄴ common - 공통 모듈<BR>
