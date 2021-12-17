@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.WindowInsetsControllerCompat;
 
 import com.yjk.common.util.TLog;
-//test5
+//test6
 public abstract class BaseActivity  extends AppCompatActivity {
     protected final String TAG = "###" + getClass().getSimpleName();
 
