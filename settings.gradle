@@ -1,5 +1,3 @@
 rootProject.name='TRY'
 include ':app'
 include ':common'
-include ':YJK'
-include ':yjk2'
