@@ -18,7 +18,7 @@ public class TTextUtil {
     /**
      * null or empty check
      */
-    public boolean isNotEmpty(String data){
+    public static boolean isNotEmpty(String data){
         boolean result = false;
 
         if(data != null && !data.isEmpty()){

@@ -19,6 +19,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewProjectList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        tools:itemCount="4"
+        tools:listitem="@layout/adapter_stage0_project_item"/>
 
 </LinearLayout>

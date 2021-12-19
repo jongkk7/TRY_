@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 apply from: '../version.gradle'
 
 android {
@@ -42,14 +43,16 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    // implementation deps.kotlin.stdlib // todo 사용 여부 확인
     api deps.appcompat
     api deps.material
     api deps.constraintlayout
-    implementation deps.viewpager2
+
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:" + deps.versions.kotlin_version
 
     implementation deps.retrofit.runtime
     implementation deps.retrofit.gson_converter
 
+    implementation deps.glide
 
 }
