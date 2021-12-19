@@ -13,6 +13,7 @@ import com.yjk.atry._0_root.adapter.AdapterProjectList;
 import com.yjk.atry._0_root.datamodel.ProjectDataModel;
 import com.yjk.atry._0_root.presenter.IntroPresenter;
 import com.yjk.common.callback.SingleCallback;
+import com.yjk.common.util.TLog;
 import com.yjk.common.view.BaseActivity;
 
 public class ActivityIntro extends BaseActivity {
@@ -32,6 +33,7 @@ public class ActivityIntro extends BaseActivity {
 
         getProjectList();
     }
+
 
     @Override
     protected void initView() {
