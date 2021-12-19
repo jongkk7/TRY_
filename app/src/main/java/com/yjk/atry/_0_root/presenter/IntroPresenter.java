@@ -15,7 +15,7 @@ public class IntroPresenter {
         ArrayList<ProjectDataModel> list = new ArrayList<>();
 
         // 프로젝트 추가
-        list.add(new ProjectDataModel("Android 기초편", ActivityBaseStart.class));
+        list.add(new ProjectDataModel(1,"Android 기초편", ActivityBaseStart.class));
 
         // todo 새로운 프로젝트 시작시 추가
 

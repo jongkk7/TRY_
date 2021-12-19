@@ -18,7 +18,7 @@ public class SingleClickListener implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         try {
-            if (SystemClock.elapsedRealtime() - mLastClickTime < 100) {
+            if (SystemClock.elapsedRealtime() - mLastClickTime < 200) {
                 return;
             } else {
                 mLastClickTime = SystemClock.elapsedRealtime();

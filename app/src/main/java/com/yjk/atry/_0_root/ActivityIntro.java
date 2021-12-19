@@ -1,6 +1,7 @@
 package com.yjk.atry._0_root;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
@@ -35,6 +36,7 @@ public class ActivityIntro extends BaseActivity {
     @Override
     protected void initView() {
 
+        setStatusBarColor(false, false, Color.parseColor("#fafafa"));
         presenter = new IntroPresenter();
 
         root = (LinearLayout) findViewById(R.id.root);

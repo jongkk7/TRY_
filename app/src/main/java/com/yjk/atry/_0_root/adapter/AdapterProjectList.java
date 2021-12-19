@@ -15,6 +15,7 @@ import com.yjk.atry._0_root.datamodel.ProjectDataModel;
 import com.yjk.common.callback.SingleCallback;
 import com.yjk.common.callback.SingleClickListener;
 import com.yjk.common.util.TLog;
+import com.yjk.common.util.TShadowUtil;
 
 import java.util.ArrayList;
 
@@ -45,10 +46,12 @@ public class AdapterProjectList extends RecyclerView.Adapter<AdapterProjectList.
 
         try {
 
+            holder.textViewStage.setText(item.getStage() + " stage");
+
             holder.textViewTitle.setText(item.getTitle());
 
         } catch (Exception e) {
-            TLog.e("Exception -> "+ e);
+            TLog.e("Exception -> " + e);
         }
     }
 
@@ -60,12 +63,16 @@ public class AdapterProjectList extends RecyclerView.Adapter<AdapterProjectList.
     class ProjectViewHolder extends RecyclerView.ViewHolder {
 
         private RelativeLayout root;
+        private TextView textViewStage;
         private TextView textViewTitle;
 
         public ProjectViewHolder(@NonNull View itemView) {
             super(itemView);
             root = (RelativeLayout) itemView.findViewById(R.id.root);
+            textViewStage = (TextView) itemView.findViewById(R.id.textViewStage);
             textViewTitle = (TextView) itemView.findViewById(R.id.textViewTitle);
+
+            root.setOutlineProvider(new TShadowUtil(-2, 0, 5, 8, 15, 0.2f));
 
             root.setOnClickListener(new SingleClickListener(new SingleClickListener.IOnClick() {
                 @Override

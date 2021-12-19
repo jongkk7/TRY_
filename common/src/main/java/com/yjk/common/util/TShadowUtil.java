@@ -15,7 +15,7 @@ public class TShadowUtil extends ViewOutlineProvider {
     private final static int DIFF_W = 0;
     private final static int DIFF_H = 10;
     private final static int RADIUS = 40;
-    private final static float alpha = 0.6f;
+    private final static float ALPHA = 0.4f;
 
     private int left;
     private int top;
@@ -23,6 +23,7 @@ public class TShadowUtil extends ViewOutlineProvider {
     private int diffW;
     private int diffH;
     private int radius;
+    private float alpha;
 
     public TShadowUtil(){
         this(TOP, LEFT, DIFF_W, DIFF_H, RADIUS);
@@ -42,6 +43,15 @@ public class TShadowUtil extends ViewOutlineProvider {
         this.diffW = diffW;
         this.diffH = diffH;
         this.radius = radius;
+    }
+
+    public TShadowUtil(int left, int top, int diffW, int diffH, int radius, float alpha) {
+        this.left = left;
+        this.top = top;
+        this.diffW = diffW;
+        this.diffH = diffH;
+        this.radius = radius;
+        this.alpha = alpha;
     }
 
     @Override
