@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yjk.atry">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -26,7 +28,7 @@
             android:screenOrientation="portrait"/>
 
         <!-- 카메라 & 앨범 -->
-        <activity android:name="._2_camera_gallery.ActivityCameraMain"
+        <activity android:name="._2_recyclerview_viewpager.ActivityRecyclerView"
             android:screenOrientation="portrait"/>
 
     </application>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_focused="true" android:drawable="@drawable/shape_red_box_r5"/>
+    <item android:state_focused="false" android:drawable="@drawable/shape_white_box_r5"/>
+</selector>

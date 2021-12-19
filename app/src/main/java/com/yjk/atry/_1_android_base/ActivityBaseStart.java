@@ -8,8 +8,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.yjk.atry.R;
 import com.yjk.common.view.BaseActivity;
 
@@ -24,7 +22,7 @@ public class ActivityBaseStart extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base_start);
+        setContentView(R.layout.activity_stage1_start);
 
         initView();
         setEvent();
