@@ -40,7 +40,7 @@ public class BottomDialogCommon extends BottomSheetDialogFragment {
         final View view = inflater.inflate(R.layout.bottom_dialog_common, null);
         initView(view);
         setEvent();
-        setWindow(view);
+//        setWindow(view);
         return view;
     }
 
@@ -78,15 +78,15 @@ public class BottomDialogCommon extends BottomSheetDialogFragment {
 
     }
 
-    private void setWindow(View view) {
-        setStyle(BottomSheetDialogFragment.STYLE_NORMAL, R.style.CustomBottomSheetDialogTheme);
-    }
+//    private void setWindow(View view) {
+//        setStyle(BottomSheetDialogFragment.STYLE_NORMAL, R.style.CustomBottomSheetDialogTheme);
+//    }
 
 
-    @Override
-    public Dialog onCreateDialog(Bundle savedInstanceState) {
-        return new BottomSheetDialog(getContext(), R.style.CustomBottomSheetDialogTheme);
-    }
+//    @Override
+//    public Dialog onCreateDialog(Bundle savedInstanceState) {
+//        return new BottomSheetDialog(getContext(), R.style.CustomBottomSheetDialogTheme);
+//    }
 
     @Override
     public void dismiss() {

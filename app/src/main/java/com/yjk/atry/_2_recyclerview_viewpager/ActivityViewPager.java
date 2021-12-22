@@ -3,7 +3,7 @@ package com.yjk.atry._2_recyclerview_viewpager;
 import android.os.Bundle;
 
 import com.yjk.atry.R;
-import com.yjk.common.view.BaseActivity;
+import com.yjk.common.view.base.BaseActivity;
 
 /**
  * 도전과제 2

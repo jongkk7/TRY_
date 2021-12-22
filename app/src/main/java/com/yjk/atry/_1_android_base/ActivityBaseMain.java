@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import com.yjk.atry.R;
 import com.yjk.common.util.TTextUtil;
-import com.yjk.common.view.BaseActivity;
+import com.yjk.common.view.base.BaseActivity;
 
 public class ActivityBaseMain extends BaseActivity {
 
