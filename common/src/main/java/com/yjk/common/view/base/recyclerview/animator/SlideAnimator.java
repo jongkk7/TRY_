@@ -1,4 +1,4 @@
-package com.yjk.common.view.base.recyclerview.custom;
+package com.yjk.common.view.base.recyclerview.animator;
 
 import android.animation.Animator;
 import android.animation.AnimatorInflater;

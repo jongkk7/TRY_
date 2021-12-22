@@ -1,19 +1,13 @@
-package com.yjk.common.view.base.recyclerview;
+package com.yjk.common.view.base.recyclerview.animator;
 
 import android.content.Context;
 
-import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.SimpleItemAnimator;
-
-import com.yjk.common.R;
-import com.yjk.common.view.base.recyclerview.custom.SlideAnimator;
 
 /**
  * 리싸이클러뷰 아이템 추가,삭제,변경 시 애니메이션 Util
  */
-public class TRecyclerViewItemAnimator {
+public class TItemAnimator {
 
     private static final long DURATION = 500L;
     private static long duration = DURATION;

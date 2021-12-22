@@ -15,7 +15,7 @@ import com.yjk.atry._0_root.datamodel.ProjectDataModel;
 import com.yjk.atry._0_root.presenter.IntroPresenter;
 import com.yjk.common.callback.SingleCallback;
 import com.yjk.common.view.base.BaseActivity;
-import com.yjk.common.view.base.recyclerview.TRecyclerViewItemAnimator;
+import com.yjk.common.view.base.recyclerview.animator.TItemAnimator;
 
 import java.util.ArrayList;
 
@@ -67,7 +67,7 @@ public class ActivityIntro extends BaseActivity {
         });
 
         recyclerViewProjectList.setAdapter(adapterProjectList);
-        recyclerViewProjectList.setItemAnimator(TRecyclerViewItemAnimator.getSlideAnimator(mContext));
+        recyclerViewProjectList.setItemAnimator(TItemAnimator.getSlideAnimator(mContext));
 
         if(isAnimation) {
             int delay = 200;
