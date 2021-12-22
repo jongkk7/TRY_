@@ -1,4 +1,4 @@
-package com.yjk.common.view;
+package com.yjk.common.view.base;
 
 import android.content.Context;
 import android.os.Build;

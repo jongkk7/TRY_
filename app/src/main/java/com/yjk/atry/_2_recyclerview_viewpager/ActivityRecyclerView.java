@@ -13,7 +13,7 @@ import com.yjk.atry._2_recyclerview_viewpager.datamodel.SimpleContentsDataModel;
 import com.yjk.atry._2_recyclerview_viewpager.dialog.DialogAddContents;
 import com.yjk.common.callback.ResponseCallback;
 import com.yjk.common.callback.SingleClickListener;
-import com.yjk.common.view.BaseActivity;
+import com.yjk.common.view.base.BaseActivity;
 
 import java.util.ArrayList;
 

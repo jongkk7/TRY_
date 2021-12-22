@@ -16,19 +16,14 @@ import com.yjk.common.callback.SingleCallback;
 import com.yjk.common.callback.SingleClickListener;
 import com.yjk.common.util.TLog;
 import com.yjk.common.util.TShadowUtil;
+import com.yjk.common.view.base.recyclerview.BaseRecyclerViewAdapter;
 
 import java.util.ArrayList;
 
-public class AdapterProjectList extends RecyclerView.Adapter<AdapterProjectList.ProjectViewHolder> {
-
-    private Context mContext;
-    private ArrayList<ProjectDataModel> mList;
-    private SingleCallback<ProjectDataModel> mCallback;
+public class AdapterProjectList extends BaseRecyclerViewAdapter<ProjectDataModel, AdapterProjectList.ProjectViewHolder> {
 
     public AdapterProjectList(Context context, ArrayList<ProjectDataModel> list, SingleCallback<ProjectDataModel> callback) {
-        this.mContext = context;
-        this.mList = list;
-        this.mCallback = callback;
+        super(context, list, callback);
     }
 
     @NonNull

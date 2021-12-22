@@ -9,7 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.yjk.atry.R;
-import com.yjk.common.view.BaseActivity;
+import com.yjk.common.view.base.BaseActivity;
 
 public class ActivityBaseStart extends BaseActivity {
     public static final String KEY_NICKNAME = "nickname";

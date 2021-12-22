@@ -3,6 +3,7 @@ package com.yjk.atry._0_root;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.widget.LinearLayout;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -13,7 +14,10 @@ import com.yjk.atry._0_root.adapter.AdapterProjectList;
 import com.yjk.atry._0_root.datamodel.ProjectDataModel;
 import com.yjk.atry._0_root.presenter.IntroPresenter;
 import com.yjk.common.callback.SingleCallback;
-import com.yjk.common.view.BaseActivity;
+import com.yjk.common.view.base.BaseActivity;
+import com.yjk.common.view.base.recyclerview.TRecyclerViewItemAnimator;
+
+import java.util.ArrayList;
 
 public class ActivityIntro extends BaseActivity {
 
@@ -21,6 +25,8 @@ public class ActivityIntro extends BaseActivity {
     private AdapterProjectList adapterProjectList;
     private LinearLayout root;
     private RecyclerView recyclerViewProjectList;
+
+    private boolean isAnimation = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +58,7 @@ public class ActivityIntro extends BaseActivity {
 
     private void getProjectList() {
 
-        adapterProjectList = new AdapterProjectList(mContext, presenter.getProjectList(), new SingleCallback<ProjectDataModel>() {
+        adapterProjectList = new AdapterProjectList(mContext, new ArrayList<>(), new SingleCallback<ProjectDataModel>() {
             @Override
             public void onResult(ProjectDataModel result) {
                 // 아이템 클릭 -> 해당 프로젝트로 이동
@@ -61,5 +67,21 @@ public class ActivityIntro extends BaseActivity {
         });
 
         recyclerViewProjectList.setAdapter(adapterProjectList);
+        recyclerViewProjectList.setItemAnimator(TRecyclerViewItemAnimator.getSlideAnimator(mContext));
+
+        if(isAnimation) {
+            int delay = 200;
+            for (ProjectDataModel data : presenter.getProjectList()) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        adapterProjectList.addItem(data);
+                    }
+                }, delay);
+                delay = delay + 150;
+            }
+        }else {
+            adapterProjectList.addItem(presenter.getProjectList());
+        }
     }
 }

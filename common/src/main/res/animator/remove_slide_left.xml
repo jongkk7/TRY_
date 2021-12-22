@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <objectAnimator
+        android:propertyName="alpha"
+        android:startOffset="300"
+        android:valueFrom="1"
+        android:valueTo="0"
+        android:valueType="floatType" />
+
+    <objectAnimator
+        android:propertyName="translationX"
+        android:valueFrom="0"
+        android:valueTo="-30dp"
+        android:valueType="floatType" />
+</set>
