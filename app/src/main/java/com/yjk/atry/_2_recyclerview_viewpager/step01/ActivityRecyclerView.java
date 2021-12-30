@@ -1,4 +1,4 @@
-package com.yjk.atry._2_recyclerview_viewpager;
+package com.yjk.atry._2_recyclerview_viewpager.step01;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,9 +8,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.yjk.atry.R;
-import com.yjk.atry._2_recyclerview_viewpager.adapter.AdapterSimpleContents;
-import com.yjk.atry._2_recyclerview_viewpager.datamodel.SimpleContentsDataModel;
-import com.yjk.atry._2_recyclerview_viewpager.dialog.DialogAddContents;
+import com.yjk.atry._2_recyclerview_viewpager.step01.adapter.AdapterSimpleContents;
+import com.yjk.atry._2_recyclerview_viewpager.step01.datamodel.SimpleContentsDataModel;
+import com.yjk.atry._2_recyclerview_viewpager.step01.dialog.DialogAddContents;
 import com.yjk.common.callback.ResponseCallback;
 import com.yjk.common.callback.SingleClickListener;
 import com.yjk.common.view.base.BaseActivity;

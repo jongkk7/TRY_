@@ -1,4 +1,4 @@
-package com.yjk.atry._2_recyclerview_viewpager;
+package com.yjk.atry._2_recyclerview_viewpager.step01;
 
 import android.os.Bundle;
 

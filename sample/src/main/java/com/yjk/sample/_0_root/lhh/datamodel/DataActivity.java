@@ -1,15 +1,11 @@
-package com.yjk.atry._2_recyclerview_viewpager.datamodel;
+package com.yjk.sample._0_root.lhh.datamodel;
 
-/**
- * 도전과제 1 데이터모델
- */
-public class SimpleContentsDataModel {
+public class DataActivity {
 
     private String title;
-
     private String contents;
 
-    public SimpleContentsDataModel(String title, String contents) {
+    public DataActivity(String title, String contents) {
         this.title = title;
         this.contents = contents;
     }
@@ -26,7 +22,8 @@ public class SimpleContentsDataModel {
         return contents;
     }
 
-    public void setContents(String contents) {
+    public void setContents(String contents){
         this.contents = contents;
     }
+
 }

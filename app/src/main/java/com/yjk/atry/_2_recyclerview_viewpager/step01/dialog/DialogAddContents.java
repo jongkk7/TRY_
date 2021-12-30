@@ -1,4 +1,4 @@
-package com.yjk.atry._2_recyclerview_viewpager.dialog;
+package com.yjk.atry._2_recyclerview_viewpager.step01.dialog;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.yjk.atry.R;
-import com.yjk.atry._2_recyclerview_viewpager.datamodel.SimpleContentsDataModel;
+import com.yjk.atry._2_recyclerview_viewpager.step01.datamodel.SimpleContentsDataModel;
 import com.yjk.common.callback.ResponseCallback;
 import com.yjk.common.callback.SingleClickListener;
 import com.yjk.common.util.TTextUtil;

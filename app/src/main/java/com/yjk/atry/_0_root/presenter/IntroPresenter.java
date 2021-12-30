@@ -2,7 +2,7 @@ package com.yjk.atry._0_root.presenter;
 
 import com.yjk.atry._0_root.datamodel.ProjectDataModel;
 import com.yjk.atry._1_android_base.ActivityBaseStart;
-import com.yjk.atry._2_recyclerview_viewpager.ActivityRecyclerView;
+import com.yjk.atry._2_recyclerview_viewpager.step01.ActivityRecyclerView;
 
 import java.util.ArrayList;
 
