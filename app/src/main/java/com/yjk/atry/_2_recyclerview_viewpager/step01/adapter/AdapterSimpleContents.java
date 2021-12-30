@@ -1,4 +1,4 @@
-package com.yjk.atry._2_recyclerview_viewpager.adapter;
+package com.yjk.atry._2_recyclerview_viewpager.step01.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.yjk.atry.R;
-import com.yjk.atry._2_recyclerview_viewpager.datamodel.SimpleContentsDataModel;
+import com.yjk.atry._2_recyclerview_viewpager.step01.datamodel.SimpleContentsDataModel;
 import com.yjk.common.util.TLog;
 
 import java.util.ArrayList;

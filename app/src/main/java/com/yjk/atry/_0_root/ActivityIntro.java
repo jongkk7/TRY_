@@ -19,6 +19,7 @@ import com.yjk.common.view.base.recyclerview.animator.TItemAnimator;
 
 import java.util.ArrayList;
 
+// Intro
 public class ActivityIntro extends BaseActivity {
 
     private IntroPresenter presenter;
