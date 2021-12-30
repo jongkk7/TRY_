@@ -27,8 +27,12 @@
         <activity android:name="._1_android_base.ActivityBaseMain"
             android:screenOrientation="portrait"/>
 
-        <!-- 카메라 & 앨범 -->
+        <!-- recyclerview & viewpager -->
         <activity android:name="._2_recyclerview_viewpager.step01.ActivityRecyclerView"
+            android:screenOrientation="portrait"/>
+        <activity android:name="._2_recyclerview_viewpager.step02.ActivityViewPager"
+            android:screenOrientation="portrait"/>
+        <activity android:name="._2_recyclerview_viewpager.step04.ActivityHeaderRecyclerView"
             android:screenOrientation="portrait"/>
 
     </application>
