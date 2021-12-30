@@ -15,11 +15,11 @@ public abstract class BaseRecyclerViewAdapter<T, VH extends RecyclerView.ViewHol
 
     protected SingleCallback<T> mCallback;
 
-    protected BaseRecyclerViewAdapter(Context context, ArrayList<T> list){
+    public BaseRecyclerViewAdapter(Context context, ArrayList<T> list){
         this(context, list, null);
     }
 
-    protected BaseRecyclerViewAdapter(Context context, ArrayList<T> list, SingleCallback<T> callback){
+    public BaseRecyclerViewAdapter(Context context, ArrayList<T> list, SingleCallback<T> callback){
         this.mContext = context;
         this.mList = list;
         this.mCallback = callback;
