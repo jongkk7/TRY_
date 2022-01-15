@@ -31,7 +31,7 @@ public class AdapterSimpleContents extends RecyclerView.Adapter<AdapterSimpleCon
     @Override
     public SimpleContentsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = (LayoutInflater) parent.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.adapter_stage2_contents_item, parent, false);
+        View view = inflater.inflate(R.layout.adapter_stage2_step1_item, parent, false);
         return new SimpleContentsViewHolder(view);
     }
 

@@ -14,7 +14,7 @@ public class ActivityViewPager extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stage2_viewpager);
+        setContentView(R.layout.activity_stage2_step2_main);
 
         initView();
         setEvent();

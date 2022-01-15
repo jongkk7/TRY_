@@ -29,7 +29,7 @@ public class ActivityHeaderRecyclerView extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stage2_header_recyclerview);
+        setContentView(R.layout.activity_stage2_step4_main);
 
         initView();
         setEvent();

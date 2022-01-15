@@ -2,23 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#fafafa"
+    >
 
-    <!-- title bar -->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="50dp"
+        android:background="@color/white">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
             android:layout_centerInParent="true"
-            android:textSize="15dp"
-            android:textColor="#333333"
-            android:text="도전과제 4"/>
+            android:src="@drawable/logo"/>
 
         <RelativeLayout
             android:id="@+id/relativeLayoutAdd"
@@ -44,14 +46,15 @@
             android:layout_width="wrap_content"
             android:layout_height="0.5dp"
             android:layout_alignParentBottom="true"
-            android:background="#333333" />
+            android:background="#aaaaaa" />
 
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewContentsList"
+        android:id="@+id/recyclerViewUserList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:itemCount="6"
-        tools:listitem="@layout/adapter_stage2_contents_item"/>
+        android:layout_height="match_parent"
+        tools:itemCount="4"
+        tools:listitem="@layout/adapter_stage0_item"/>
+
 </LinearLayout>

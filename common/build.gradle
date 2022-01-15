@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 apply from: '../version.gradle'
 
 android {
@@ -43,12 +44,13 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    api deps.kotlin.stdlib
+    api deps.kotlin.coroutine_core
+    api deps.kotlin.coroutine_android
+
     api deps.appcompat
     api deps.material
     api deps.constraintlayout
-
-    implementation "androidx.core:core-ktx:+"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:" + deps.versions.kotlin_version
 
     implementation deps.retrofit.runtime
     implementation deps.retrofit.gson_converter

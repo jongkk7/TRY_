@@ -33,7 +33,7 @@ public class AdapterHeader extends BaseRecyclerViewAdapter<HeaderDataModel, Adap
     @Override
     public HeaderContentsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = (LayoutInflater) parent.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.adapter_stage2_header_contents_item, parent, false);
+        View view = inflater.inflate(R.layout.adapter_stage2_step4_item, parent, false);
         return new HeaderContentsViewHolder(view);
     }
 

@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 apply from: '../version.gradle'
 
 android {
@@ -39,6 +40,10 @@ android {
         }
     }
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -49,11 +54,15 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation project(':common')
-    implementation "androidx.core:core-ktx:+"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:" + deps.versions.kotlin_version
 
     implementation deps.glide
     implementation deps.viewpager2
+
+    implementation deps.room
+    kapt deps.room_compiler
+
+    implementation deps.retrofit.runtime
+    implementation deps.retrofit.gson_converter
 }
 repositories {
     mavenCentral()

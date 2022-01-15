@@ -35,7 +35,7 @@ public class DialogAddContents extends DialogCommon {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.dialog_stage2_add_contents);
+        setContentView(R.layout.dialog_stage2_step1_add);
 
         setWindow();
         initView();

@@ -32,7 +32,13 @@
             android:screenOrientation="portrait"/>
         <activity android:name="._2_recyclerview_viewpager.step02.ActivityViewPager"
             android:screenOrientation="portrait"/>
+        <activity android:name="._2_recyclerview_viewpager.step03.ActivityViewPagerAndRecyclerView"
+            android:screenOrientation="portrait"/>
         <activity android:name="._2_recyclerview_viewpager.step04.ActivityHeaderRecyclerView"
+            android:screenOrientation="portrait"/>
+
+        <!-- room -->
+        <activity android:name="._101_room.ActivityRoom"
             android:screenOrientation="portrait"/>
 
     </application>

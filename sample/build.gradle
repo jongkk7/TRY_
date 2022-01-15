@@ -45,9 +45,6 @@ dependencies {
 
     implementation project(':common')
 
-    implementation "androidx.core:core-ktx:+"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:" + deps.versions.kotlin_version
-
     implementation deps.retrofit.runtime
     implementation deps.retrofit.gson_converter
 

@@ -41,7 +41,7 @@ public class DialogAddHeaderContents extends DialogCommon {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.dialog_stage2_add_header_contents);
+        setContentView(R.layout.dialog_stage2_step4_add);
 
         setWindow();
         initView();
