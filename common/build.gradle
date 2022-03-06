@@ -52,8 +52,15 @@ dependencies {
     api deps.material
     api deps.constraintlayout
 
-    implementation deps.retrofit.runtime
-    implementation deps.retrofit.gson_converter
+    api deps.room
+    kapt deps.room_compiler
+
+    kapt deps.viewmodel
+    kapt deps.livedata
+    kapt deps.ktx
+
+    api deps.retrofit.runtime
+    api deps.retrofit.gson_converter
 
     implementation deps.glide
 

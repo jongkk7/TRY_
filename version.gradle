@@ -28,9 +28,12 @@ versions.constraint_version = '2.1.1'
 versions.recyclerview = '1.2.1'
 versions.viewpager2 = '1.0.0'
 versions.room = '2.3.0'
+versions.lifecycle = '2.2.0'
+versions.ktx = '1.1.0'
 
 versions.retrofit_version = '2.9.0'
 versions.glide_version = '4.9.0'
+versions.lottie_version = '4.2.2'
 
 /**
  * android
@@ -41,10 +44,16 @@ deps.constraintlayout = "androidx.constraintlayout:constraintlayout:$versions.co
 deps.recyclerview = "androidx.recyclerview:recyclerview:$versions.recyclerview"
 deps.viewpager2 = "androidx.viewpager2:viewpager2:$versions.viewpager2"
 deps.room = "androidx.room:room-runtime:$versions.room"
-deps.room_compiler = "androidx.room:room-compiler:$versions.room" // annotationProcessor
+deps.room_compiler = "androidx.room:room-compiler:$versions.room"
+deps.viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle"
+deps.livedata = "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycle"
+deps.ktx = "androidx.activity:activity-ktx:$versions.ktx"
 
 // glide
 deps.glide = "com.github.bumptech.glide:glide:$versions.glide_version"
+
+// lottie
+deps.lottie = "com.airbnb.android:lottie:$versions.lottie_version"
 
 /**
  * kotlin

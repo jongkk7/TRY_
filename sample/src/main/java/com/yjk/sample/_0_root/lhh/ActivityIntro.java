@@ -56,30 +56,30 @@ public class ActivityIntro extends BaseActivity implements View.OnClickListener{
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.plusButton:
-                CustomDialog dlg = new CustomDialog(ActivityIntro.this);
-
-                dlg.setDialogListener(new CustomDialog.CustomDialogListener(){
-                    @Override
-                    public void onPositiveClicked(String title, String contents) {
-
-                        DataActivity data = new DataActivity(title, contents);
-
-                        dList.add(0,data);
-                        adapter.notifyDataSetChanged();
-                    }
-
-                    @Override
-                    public void onNegativeClicked() {
-
-                    }
-                });
-                dlg.show();
-
-                break;
-
-        }
+//        switch (view.getId()){
+//            case R.id.plusButton:
+//                CustomDialog dlg = new CustomDialog(ActivityIntro.this);
+//
+//                dlg.setDialogListener(new CustomDialog.CustomDialogListener(){
+//                    @Override
+//                    public void onPositiveClicked(String title, String contents) {
+//
+//                        DataActivity data = new DataActivity(title, contents);
+//
+//                        dList.add(0,data);
+//                        adapter.notifyDataSetChanged();
+//                    }
+//
+//                    @Override
+//                    public void onNegativeClicked() {
+//
+//                    }
+//                });
+//                dlg.show();
+//
+//                break;
+//
+//        }
 
 
 
@@ -103,7 +103,6 @@ public class ActivityIntro extends BaseActivity implements View.OnClickListener{
                         })
                         .setNeutralButton("취소", null)
                         .show();
-
             }
         });
 

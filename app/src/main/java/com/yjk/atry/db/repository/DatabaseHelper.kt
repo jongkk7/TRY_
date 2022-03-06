@@ -3,8 +3,9 @@ package com.yjk.atry.db.repository
 import android.content.Context
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.yjk.atry.db.AppDatabase
+import com.yjk.common.db.AppDatabase
 
+@Deprecated("삭제예정")
 class DatabaseHelper {
 
     companion object {

@@ -25,6 +25,7 @@ public abstract class BaseRecyclerViewAdapter<T, VH extends RecyclerView.ViewHol
         this.mCallback = callback;
     }
 
+
     @Override
     public int getItemCount() {
         return mList.size();

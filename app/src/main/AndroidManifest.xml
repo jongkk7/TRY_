@@ -10,6 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
+        android:name="com.yjk.common.view.base.BaseApplication"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
 
@@ -39,6 +40,10 @@
 
         <!-- room -->
         <activity android:name="._101_room.ActivityRoom"
+            android:screenOrientation="portrait"/>
+
+        <!-- youtube -->
+        <activity android:name="._3_youtube.ActivityYoutube"
             android:screenOrientation="portrait"/>
 
     </application>

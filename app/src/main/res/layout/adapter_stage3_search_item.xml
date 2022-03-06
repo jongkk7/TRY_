@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_renew"/>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="20dp"
+        android:maxLength="25"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="2021 이슈모음 총 글자 25글자 줄점프 x ......."
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewThumbnail"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_back"
+        android:rotation="45"
+        />
+
+</LinearLayout>

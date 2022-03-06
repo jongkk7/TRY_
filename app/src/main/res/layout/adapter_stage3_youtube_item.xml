@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white"
+    android:elevation="1dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp"
+            android:scaleType="centerCrop"
+            tools:background="#33000000" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="#333333"
+            android:paddingStart="2dp"
+            android:paddingTop="1dp"
+            android:paddingEnd="2dp"
+            android:paddingBottom="1dp">
+
+            <TextView
+                android:id="@+id/textViewTotalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"
+                tools:text="2:23:21"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <!--    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView-->
+    <!--        android:id="@+id/youtube_player_view"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--        &lt;!&ndash; 총 영상 길이 &ndash;&gt;-->
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="bottom|end"-->
+    <!--            android:layout_marginEnd="10dp"-->
+    <!--            android:layout_marginBottom="8dp"-->
+    <!--            android:background="#333333"-->
+    <!--            android:paddingStart="2dp"-->
+    <!--            android:paddingTop="1dp"-->
+    <!--            android:paddingEnd="2dp"-->
+    <!--            android:paddingBottom="1dp">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:includeFontPadding="false"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                tools:text="2:23:21" />-->
+
+    <!--        </RelativeLayout>-->
+
+    <!--    </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <ImageView
+            android:id="@+id/imageViewChannel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            tools:background="@drawable/shape_circle_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="-3dp"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="11dp"
+            app:layout_constraintStart_toEndOf="@id/imageViewChannel"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="[PlayList] 출근길에 신나는 노래 들으면서 신나게 출근\n크흠...." />
+
+        <TextView
+            android:id="@+id/textViewContents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#666666"
+            android:textSize="8dp"
+            app:layout_constraintStart_toStartOf="@id/textViewTitle"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+            tools:text="퇴사하고싶다. 조회수 10만회 . 3주전" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

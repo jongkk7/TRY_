@@ -3,11 +3,11 @@ package com.yjk.atry._101_room
 import android.content.Context
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.yjk.atry._101_room.datamodel.UserDataModel
-import com.yjk.atry._101_room.repository.UserRepository
 import com.yjk.atry._2_recyclerview_viewpager.step01.adapter.AdapterSimpleContents
 import com.yjk.atry._2_recyclerview_viewpager.step01.datamodel.SimpleContentsDataModel
 import com.yjk.atry.databinding.ActivityStage101MainBinding
+import com.yjk.common.db.datamodel.UserDataModel
+import com.yjk.common.db.repository.DataRepository
 import com.yjk.common.view.base.BaseActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -18,7 +18,7 @@ class ActivityRoom : BaseActivity() {
     var a: Int = 0
 
     lateinit var binding: ActivityStage101MainBinding
-    var userRepository: UserRepository? = null
+    var dataRepository: DataRepository? = null
     var adapter: AdapterSimpleContents? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,7 +55,7 @@ class ActivityRoom : BaseActivity() {
         val user = UserDataModel(id, name, "-")
 
         CoroutineScope(Dispatchers.IO).launch {
-            userRepository?.insertUser(user)
+            dataRepository?.userDao?.insert(user)
         }
         adapter?.addItem(SimpleContentsDataModel("${user.id}", user.name))
 
@@ -65,7 +65,7 @@ class ActivityRoom : BaseActivity() {
 
         CoroutineScope(Dispatchers.IO).launch {
 
-            val userList = userRepository?.getUserList()
+            val userList = dataRepository?.userDao?.selectAll()
             val list = ArrayList<SimpleContentsDataModel>()
 
             if (userList != null) {

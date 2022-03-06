@@ -63,6 +63,15 @@ dependencies {
 
     implementation deps.retrofit.runtime
     implementation deps.retrofit.gson_converter
+
+//    implementation 'org.python:jython-installer:2.7.2'
+
+    // youtube
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:11.0.1'
+
+    // animation
+    implementation deps.lottie
+
 }
 repositories {
     mavenCentral()

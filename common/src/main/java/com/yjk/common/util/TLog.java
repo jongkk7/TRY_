@@ -13,9 +13,9 @@ public class TLog {
             StackTraceElement[] trace = stack.getStackTrace();
 
             if(trace != null) {
-                String className = trace[0].getClassName();
-                String methodName = trace[0].getMethodName();
-                TAG = "[" + className + "] " + methodName;
+                String className = trace[2].getClassName();
+                String methodName = trace[2].getMethodName();
+                TAG = "[###" + className + "] " + methodName;
             }else {
                 TAG = "###TLOG";
             }

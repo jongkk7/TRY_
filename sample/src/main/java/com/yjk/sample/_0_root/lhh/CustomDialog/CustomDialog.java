@@ -8,7 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.yjk.atry.R;
+import com.yjk.sample.R;
+
+//import com.yjk.atry.R;
 
 public class CustomDialog extends Dialog implements View.OnClickListener {
 
@@ -50,24 +52,24 @@ public class CustomDialog extends Dialog implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.bt_positive:
-                String title = et_title.getText().toString();
-                String contents = et_contents.getText().toString();
-
-                if(title.trim().equals("")  || contents.trim().equals("")){
-                    Toast.makeText(mContext,"title과 contents를 모두 입력해주세요.", Toast.LENGTH_SHORT).show();
-                } else {
-                    customDialogListener.onPositiveClicked(title, contents);
-                }
-                dismiss();
-                break;
-
-            case R.id.bt_negative:
-                cancel();
-                break;
-
-        }
+//        switch (view.getId()){
+//            case R.id.bt_positive:
+//                String title = et_title.getText().toString();
+//                String contents = et_contents.getText().toString();
+//
+//                if(title.trim().equals("")  || contents.trim().equals("")){
+//                    Toast.makeText(mContext,"title과 contents를 모두 입력해주세요.", Toast.LENGTH_SHORT).show();
+//                } else {
+//                    customDialogListener.onPositiveClicked(title, contents);
+//                }
+//                dismiss();
+//                break;
+//
+//            case R.id.bt_negative:
+//                cancel();
+//                break;
+//
+//        }
 
     }
 }
